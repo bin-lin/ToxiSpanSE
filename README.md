@@ -18,6 +18,10 @@ $git clone https://github.com/WSU-SEAL/ToxiSpanSE.git
 
 #install all the requirements: </br>
 $ pip install -r "requirements.txt"
+$ python -m spacy download en_core_web_sm
+
+If you encounter "ModuleNotFoundError: No module named 'keras.saving.hdf5_format'", run the following command:
+$ pip install git+https://github.com/huggingface/transformers
 
 ToxiSpanSE is user friendly tool. You can view all the options by using the following command:
 $ python ToxiSpanSE.py --h
